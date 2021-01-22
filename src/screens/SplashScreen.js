@@ -5,12 +5,16 @@ import Colors from '../constants/Colors';
 const SplashScreen = (props) =>{
     setTimeout(() => {
         props.navigation.replace('GettingStarted');
-    },3000);
+    },2000);
     return(
         <View style={styles.container}>
             <Image source={require('../../assets/images/groceries.jpg')}/>
         </View>
     );
+};
+
+SplashScreen.navigationOptions ={
+    headerShown: false
 };
 const styles = StyleSheet.create({
     container: {

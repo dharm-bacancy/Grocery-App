@@ -1,116 +1,88 @@
-import React from "react";
-import { TextInput } from "react-native";
-import { Image, StyleSheet, Text, View, Dimensions,ScrollView } from "react-native";
-import Flags from "react-native-flags";
-import CustomButton from "../components/CustomButton";
-import Icon from "react-native-vector-icons/FontAwesome";
+import React from 'react';
+import {StyleSheet,View,Text,ScrollView,Image,Dimensions,TextInput} from 'react-native'; 
+import Flags from 'react-native-flags';
+import CustomButton from '../components/CustomButton';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
-const SignInScreen = (props) => {
-  return (
-    <ScrollView>
-        <View style={styles.container}>
-            <Image source={require("../../assets/images/signin.png")}/>
-            <View style={styles.captionContainer}>
-                <Text style={styles.caption}>Get your groceries with nectar</Text>
-            </View>
-            <View style={styles.contactContainer}>
-                <Flags code="IN" size={32}/>
-                <Text style={styles.countryCode}>+91</Text>
-                <View style={styles.contactInputContainer}>
-                <TextInput
-                    style={styles.contactInput}
-                    maxLength={10}
-                    keyboardType="numeric"
-                    onFocus={() => {
-                    props.navigation.navigate("Number");
-                    }}
-                />
+const SignInScreen = (props) =>{
+    return(
+        <ScrollView>
+            <View style={styles.sign}>
+                <Image source={require('../../assets/images/signin.png')}/>
+                <Text style={styles.captionText}>
+                    Get Your Groceries With Nectar
+                </Text>
+                <View style={styles.inputText}>
+                    <Flags code='IN' size={32}/>
+                    <Text style={styles.countryCode}>+91</Text>
+                    <TextInput keyboardType='numeric' maxLength={10} style={styles.contact}/>
                 </View>
+                <View>
+                    <Text style={styles.text}>
+                        Or connect with social media
+                    </Text>
+                </View>
+                <CustomButton style={styles.facebook} title='Continue With Facebook'>
+                    <Icon name='facebook-square' size={30} color='white'/>
+                </CustomButton>
+                <CustomButton style={styles.google} title='Continue With Google'>
+                    <Icon name='google' size={30} color='white'/>
+                </CustomButton>
             </View>
-            <View style={styles.secondryTextContainer}>
-                <Text style={styles.secondryText}>Or connect with social media</Text>
-            </View>
-            <CustomButton title="Continue with Google" style={styles.googleButton}>
-                <Icon name='google' color='white' size={25}/>
-            </CustomButton>
-            <CustomButton
-                title="Continue with Facebook"
-                style={styles.facebookButton}
-            >
-                <Icon name='facebook' color='white' size={25}/>
-            </CustomButton>
-        </View>
-    </ScrollView>
-  );
+        </ScrollView>
+    );
 };
 
 SignInScreen.navigationOptions = {
-  headerShown: false,
+    headerShown: false
 };
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "flex-start",
-    backgroundColor: "#FCFCFC",
-  },
-  captionContainer: {
-    alignSelf: "flex-start",
-    width: Dimensions.get("window").width / 1.6,
-    marginLeft: Dimensions.get("window").width / 15,
-    marginTop: Dimensions.get("window").height / 15,
-  },
-  caption: {
-    fontFamily: "Gilroy-Regular",
-    fontSize: 26,
-    fontWeight: "600",
-    color: "#030303",
-  },
-  contactContainer: {
-    flexDirection: "row",
-    alignItems: "center",
-    borderBottomWidth: 2,
-    borderBottomColor: "#E2E2E2",
-    width: Dimensions.get("window").width / 1.2,
-    height: Dimensions.get("window").height / 20,
-    marginTop: Dimensions.get("window").height / 70,
-  },
-  contactInputContainer: {
-    height: Dimensions.get("window").height / 20,
-    width: Dimensions.get("window").width * 0.64,
-    alignItems: "flex-start",
-  },
-  countryCode: {
-    fontFamily: "Gilroy-Medium",
-    fontSize: 18,
-    marginBottom: Dimensions.get("window").height / 300,
-    marginHorizontal: Dimensions.get("window").width / 40,
-    color: "#030303",
-  },
-  contactInput: {
-    fontFamily: "Gilroy-Medium",
-    fontSize: 18,
-    color: "#030303",
-  },
-  secondryTextContainer: {
-    marginVertical: Dimensions.get("window").height / 20,
-  },
-  secondryText: {
-    fontFamily: "Gilroy-Regular",
-    fontSize: 14,
-    fontWeight: "600",
-    color: "#828282",
-  },
-  googleButton: {
-    backgroundColor: "#5383EC",
-    width: Dimensions.get("window").width / 1.2,
-  },
-  facebookButton: {
-    backgroundColor: "#4A66AC",
-    marginTop: Dimensions.get("window").height / 50,
-    width: Dimensions.get("window").width / 1.2,
-  },
+    sign:{
+        flex:1,
+        alignItems:'center'
+    },
+    captionText:{
+        fontSize:30,
+        fontWeight:'900',
+        alignSelf:'flex-start',
+        marginLeft:Dimensions.get('window').width / 15,
+        marginRight:Dimensions.get('window').width / 5
+    },
+    inputText:{
+        alignSelf:'flex-start',
+        flexDirection:'row',
+        marginTop: Dimensions.get('window').width /30,
+        marginLeft: Dimensions.get('window').width /15,
+        borderBottomWidth:3,
+        borderBottomColor:'#E2E2E2',
+        width:Dimensions.get('window').width / 1.2
+    },
+    countryCode:{
+        fontSize:22,
+        marginLeft:10
+    },
+    contact:{
+        fontSize:22,
+        color:'#030303',
+    },
+    text:{
+        marginTop: Dimensions.get('window').width /20
+    },
+    facebook:{
+        backgroundColor:'#4A66AC',
+        marginTop:Dimensions.get('window').width / 20,
+        width:Dimensions.get('window').width / 1.3,
+        justifyContent:'space-evenly',
+        alignItems:'center'
+    },
+    google:{
+        width:Dimensions.get('window').width / 1.3,
+        justifyContent:'space-evenly',
+        alignItems:'center',
+        marginTop:Dimensions.get('window').width / 30,
+        backgroundColor:'#FF3E30'
+    }
 });
 
 export default SignInScreen;
