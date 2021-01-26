@@ -22,10 +22,10 @@ const SignInScreen = (props) =>{
                         Or connect with social media
                     </Text>
                 </View>
-                <CustomButton style={styles.facebook} title='Continue With Facebook'>
+                <CustomButton style={styles.facebook} title='Continue With Facebook' onSelect={()=>props.navigation.navigate('ProductsOverview')}>
                     <Icon name='facebook-square' size={30} color='white'/>
                 </CustomButton>
-                <CustomButton style={styles.google} title='Continue With Google'>
+                <CustomButton style={styles.google} title='Continue With Google' onSelect={()=>props.navigation.navigate('ProductsOverview')}>
                     <Icon name='google' size={30} color='white'/>
                 </CustomButton>
             </View>
