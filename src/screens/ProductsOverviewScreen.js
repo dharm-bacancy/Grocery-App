@@ -1,6 +1,5 @@
 import React from 'react';
-import {View, Text,FlatList,Scro} from 'react-native';
-import { ScrollView } from 'react-native-gesture-handler';
+import {View, Text,FlatList,TextInput,StyleSheet} from 'react-native';
 import {useSelector} from 'react-redux';
 import ProductItem from '../components/ProductItem';
 import Icon from 'react-native-vector-icons/FontAwesome';
@@ -14,24 +13,44 @@ import AccountScreen from '../screens/AccountScreen';
 const ProductsOverviewScreen = props =>{
     const products = useSelector(state => state.products.availableProducts);
     return(
-        <FlatList
-            horizontal
-            //numColumns={2}
-            data={products}
-            renderItem={itemData => (
-                <ProductItem    
-                    image={itemData.item.imageUrl} 
-                    title={itemData.item.title}
-                    price={itemData.item.price}      
-                />
-            )}
-        />
-        // <View style={{flexDirection:'row', flex:1}}>
-        //     {products.map((itemData, index) =>             
-                //key={index}
-        // </View>  
+        <View>
+            <Text style={styles.title}>Exclusive Offer</Text>
+            <FlatList
+                horizontal
+                //numColumns={2}
+                data={products}
+                renderItem={itemData => (
+                    <ProductItem    
+                        image={itemData.item.imageUrl} 
+                        title={itemData.item.title}
+                        detail={itemData.item.detail}
+                        price={itemData.item.price}
+                        onViewDetail = {()=>{
+                            props.navigation.navigate('ProductDetail',{
+                                productId: itemData.item.id,
+                                productTitle: itemData.item.title
+                            });
+                        }}      
+                    />
+                )}
+            />
+        {/* // <View style={{flexDirection:'row', flex:1}}>
+        //      {products.map((itemData, index) =>             
+        //         key={index}
+        // </View> */}
+        </View>
     );
+    
 };
+
+const styles = StyleSheet.create({
+    title:{
+        fontSize:22,
+        fontWeight:'bold',
+        marginTop: 5,
+        marginLeft: 20
+    }
+});
 
 const TabNavigator = createMaterialBottomTabNavigator({
     Shop:{
@@ -95,5 +114,9 @@ const TabNavigator = createMaterialBottomTabNavigator({
         }
     }
 });
+
+ProductsOverviewScreen.navigationOptions = {
+    headerShown: false
+};
 
 export default TabNavigator;

@@ -1,24 +1,29 @@
 import React from 'react';
-import {View,StyleSheet,Text,Image,Button,Dimensions,ScrollView} from 'react-native';
+import {View,StyleSheet,Text,Image,Button,Dimensions,ScrollView,TextInput,TouchableNativeFeedback} from 'react-native';
 import Colors from '../constants/Colors';
 import CustomButton from '../components/CustomButton';
 import Icon from 'react-native-vector-icons/Entypo';
 
 const ProductItem = props =>{
     return(
-        <View style={styles.product}>
-            <View style={styles.imageContainer}>
-                <Image style={styles.image} source={{uri: props.image}}/>
+        <View style={styles.touchable}>
+        <TouchableNativeFeedback onPress={props.onViewDetail} useForeground>
+            <View style={styles.product}>
+                <View style={styles.imageContainer}>
+                    <Image style={styles.image} source={{uri: props.image}}/>
+                </View>
+                <View style={styles.details}>
+                    <Text style={styles.title}>{props.title}</Text>
+                </View>
+                <Text style={styles.detailItem}>{props.detail}</Text>
+                <View style={styles.actions}>
+                    <Text style={styles.price}>${props.price.toFixed(2)}</Text>
+                    <CustomButton style={styles.addButoon}>
+                        <Icon name='plus' size={25} color='white'/>
+                    </CustomButton>
+                </View>
             </View>
-            <View style={styles.details}>
-                <Text style={styles.title}>{props.title}</Text>
-            </View>
-            <View style={styles.actions}>
-                <Text style={styles.price}>${props.price.toFixed(2)}</Text>
-                <CustomButton style={styles.addButoon}>
-                    <Icon name='plus' size={30} color='white'/>
-                </CustomButton>
-            </View>
+        </TouchableNativeFeedback>
         </View>
     );
 };
@@ -32,10 +37,13 @@ const styles = StyleSheet.create({
         elevation:5,
         borderRadius: 10,
         backgroundColor: 'white',
-        height: 290,
+        height: 300,
         margin: 20,
         width:Dimensions.get('window').width /2.4,
         
+    },
+    touchable:{
+        overflow:'hidden'
     },
     imageContainer:{
         width:'100%',
@@ -50,19 +58,24 @@ const styles = StyleSheet.create({
     },
     title:{
         fontSize:18,
-        marginVertical: 4
+        marginVertical: 4,
+    },
+    detailItem:{
+        fontSize: 15,
+        //marginVertical: 4,
+        paddingLeft:17,
+        paddingBottom:2,
+        color:'#888'
+        //alignItems:'flex-start'
     },
     price:{
-        fontSize: 20,
-        color:'#888'
+        fontSize: 20
     },
     actions:{
         flexDirection:'row',
         justifyContent:'space-between',
         alignContent:'center',
-        //height:'25%',
         paddingHorizontal:20,
-        //marginBottom:Dimensions.get('window').width /20
     },
     details:{
         padding:10,
@@ -72,7 +85,7 @@ const styles = StyleSheet.create({
     addButoon:{
         width: Dimensions.get('window').width / 10,
         height:Dimensions.get('window').width /9
-    }
+    },
 });
 
 export default ProductItem;

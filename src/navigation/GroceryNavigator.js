@@ -10,6 +10,7 @@ import CartScreen from '../screens/CartScreen';
 import { Text, View } from 'react-native';
 import FavoriteScreen from '../screens/FavoriteScreen';
 import AccountScreen from '../screens/AccountScreen';
+import ProductDetailScreen from '../screens/ProductDetailScreen';
 
 const GroceryNavigator = createStackNavigator({
     Splash: SplashScreen,
@@ -19,7 +20,8 @@ const GroceryNavigator = createStackNavigator({
     Explore: ExploreScreen,
     Cart: CartScreen,
     Favorite: FavoriteScreen,
-    Account: AccountScreen
+    Account: AccountScreen,
+    ProductDetail: ProductDetailScreen
 });
 
 
