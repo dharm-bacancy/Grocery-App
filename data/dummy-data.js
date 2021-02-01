@@ -94,74 +94,56 @@ const PRODUCTS = [
     new Product(
         'p11',
         'u4',
-        'Frash Fruits & Vegetable',
-        'https://lh3.googleusercontent.com/proxy/2YmDmFi1MSY0Fzc92mhdvBGxuk3lq0w95cWugO1KLOmGzq5kWl7Rzmv31-dCYTL3XahLT1QvjQYMuiL1hNfN7gMxyWytsh7Y8cMw4RLZEqSthJEjd8bwSiY',
-        'nothing',
+        'Diet Coke',
+        'https://fasab.files.wordpress.com/2014/03/diet-coke.jpg',
+        '355ml, Price',
         'nothings',
-        0
+        1.99
     ),
     new Product(
         'p12',
         'u4',
-        'Cooking Oil & Ghee',
-        'https://p7.hiclipart.com/preview/2/84/34/soybean-oil-cooking-oils-vegetable-oil-sunflower-oil-oil.jpg',
-        'nothing',
+        'Sprite Can',
+        'https://5.imimg.com/data5/UE/NE/WQ/SELLER-82456434/sprinte-cold-derink-500x500.jpg',
+        '325ml, Price',
         'nothings',
-        0
+        1.50
     ),
     new Product(
         'p13',
         'u4',
-        'Meat & Fish',
-        'https://previews.123rf.com/images/magone/magone1502/magone150200094/36454292-fresh-raw-meat-products-on-wooden-table.jpg',
-        'nothing',
+        'Apple & Grape Juice',
+        'https://www.treetop.com/wp-content/uploads/2018/07/tree-top-juice-apple-grape-64oz.png',
+        '2L, Price',
         'nothings',
-        0
+        15.99
     ),
     new Product(
         'p14',
         'u4',
-        'Bakery & Snacks',
-        'https://content3.jdmagicbox.com/comp/def_content/bakeries/default-bakeries-13.jpg',
-        'nothing',
+        'Orenge Juice',
+        'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/tropicana-organic-orange-juice-with-juicy-bits-ocado-1547734462.jpg?crop=1xw:1xh;center,top&resize=480:*',
+        '2L, Price',
         'nothings',
-        0
+        15.99
     ),
     new Product(
         'p15',
         'u4',
-        'Dairy & Eggs',
-        'https://www.dabiramagazine.com/wp-content/uploads/2019/05/PICTURE-2.jpg',
-        'nothing',
+        'Coca Cola Can',
+        'https://previews.123rf.com/images/choneschones/choneschones1505/choneschones150500045/41052522-sofia-bulgaria-june-06-2014-cola-cola-can-with-water-drops-isolated-on-white-.jpg',
+        '325ml, Price',
         'nothings',
-        0
+        4.99
     ),
     new Product(
         'p16',
         'u4',
-        'Beverages',
-        'https://www.saltnspice.in/wp-content/uploads/2019/09/soft-drinks.jpg',
-        'nothing',
+        'Pepsi Can',
+        'https://t3.ftcdn.net/jpg/03/23/86/24/360_F_323862457_5RaEzJNg6yeYx6RjbU4WwkAl3R0yxNQt.jpg',
+        '330ml, Price',
         'nothings',
-        0
-    ),
-    new Product(
-        'p17',
-        'u4',
-        'Pulses',
-        'https://lh3.googleusercontent.com/proxy/vnD9br1v9VwwA5sOBeP6ikc-3O6IRuj5l_StrO04KAwvmYJpKyw53OhV98l0kCKvt39hkEaf0CaDXb5V1Nl9pc1dQMaNmOzkzN6vn15PedkigdIbDG4XiQ',
-        'nothing',
-        'nothings',
-        0
-    ),
-    new Product(
-        'p18',
-        'u4',
-        'Rices',
-        'https://previews.123rf.com/images/zendograph/zendograph1812/zendograph181200044/114671402-top-view-of-jasmine-rice-in-a-bowl-on-dark-wooden-table-with-rice-plants-jasmine-flower-ear-of-rices.jpg',
-        'nothing',
-        'nothings',
-        0
+        4.99
     ),
 ];
 
