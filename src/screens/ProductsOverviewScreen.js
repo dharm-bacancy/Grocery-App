@@ -1,6 +1,6 @@
 import React from 'react';
-import {View, Text,FlatList,TextInput,StyleSheet} from 'react-native';
-import {useSelector} from 'react-redux';
+import {View, Text,FlatList,TextInput,StyleSheet,Image,ScrollView,Dimensions} from 'react-native';
+import {useDispatch, useSelector} from 'react-redux';
 import ProductItem from '../components/ProductItem';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import {createMaterialBottomTabNavigator} from 'react-navigation-material-bottom-tabs';
@@ -9,11 +9,17 @@ import ExploreScreen from '../screens/ExploreScreen';
 import CartScreen from '../screens/CartScreen';
 import FavouriteScreen from './FavoriteScreen';
 import AccountScreen from '../screens/AccountScreen';
+import * as cartAction from '../../store/actions/cart';
 
 const ProductsOverviewScreen = props =>{
-    const products = useSelector(state => state.products.availableProducts);
+    const products = useSelector(state => state.products.userProducts);
+    const productsBest = useSelector(state => state.products.selectedProducts);
+         const dispatch = useDispatch();
     return(
         <View>
+            <ScrollView>
+            <Image source={{uri:'https://cdn.grabon.in/gograbon/images/web-images/uploads/1593767938443/groceries-offers.jpg'}} style={styles.image}/>
+            <ScrollView>
             <Text style={styles.title}>Exclusive Offer</Text>
             <FlatList
                 horizontal
@@ -30,14 +36,40 @@ const ProductsOverviewScreen = props =>{
                                 productId: itemData.item.id,
                                 productTitle: itemData.item.title
                             });
+                        }}
+                        onAddToCart = {()=>{
+                            dispatch(cartAction.addToCart(itemData.item));
                         }}      
                     />
                 )}
             />
-        {/* // <View style={{flexDirection:'row', flex:1}}>
-        //      {products.map((itemData, index) =>             
-        //         key={index}
-        // </View> */}
+            <Text style={styles.title}>Best Selling</Text>
+            <View style={styles.Best}>
+            <FlatList
+                horizontal
+                data={productsBest}
+                renderItem={itemData => (
+                    <ProductItem
+                        image={itemData.item.imageUrl}
+                        title={itemData.item.title}
+                        detail={itemData.item.detail}
+                        price={itemData.item.price}
+                        onViewDetail = {() =>{
+                            props.navigation.navigate('ProductDetail',{
+                                productId: itemData.item.id,
+                                productTitle: itemData.item.title
+                            });
+                        }} 
+                        onAddToCart = {()=>{
+                            dispatch(cartAction.addToCart(itemData.item));
+                        }}
+                    />
+                )}
+            />
+            <Text style={styles.title}>Groceries</Text>
+            </View>
+            </ScrollView>
+        </ScrollView>
         </View>
     );
     
@@ -49,8 +81,27 @@ const styles = StyleSheet.create({
         fontWeight:'bold',
         marginTop: 5,
         marginLeft: 20
+    },
+    image:{
+        width:'100%',
+        height:'18%'
+    },
+    Best:{
+        marginBottom:Dimensions.get('window').width /2
     }
 });
+
+// ProductsOverviewScreen.navigationOptions = navData => {
+//     return{
+//         tabBarLabel:'shop',
+//         tabBarColor:'white',
+//         tabBarIcon: (tabInfo) => {
+//             return(
+//                 <Icon name='shopping-basket' size={25} color='black'/>
+//             );
+//         } 
+//     };
+// };
 
 const TabNavigator = createMaterialBottomTabNavigator({
     Shop:{
@@ -84,7 +135,13 @@ const TabNavigator = createMaterialBottomTabNavigator({
             tabBarColor:Colors.accent,
             tabBarIcon: (tabInfo) => {
                 return(
-                    <Icon name='shopping-cart' size={25} color='black'/> 
+                    <Icon 
+                        name='shopping-cart' 
+                        size={25} color='black' 
+                        // onPress={()=> {
+                        //     navigation.navigate('Cart')
+                        // }}
+                    /> 
                 );
             }
         }

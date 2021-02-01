@@ -4,31 +4,29 @@ import Colors from '../constants/Colors';
 import CustomButton from '../components/CustomButton';
 import Icon from 'react-native-vector-icons/Entypo';
 
-const ProductItem = props =>{
+const ProductItemBest = props => {
     return(
-        <View>
-            <View style={styles.touchable}>
-                <TouchableNativeFeedback onPress={props.onViewDetail} useForeground>
+        <View style={styles.touchable}>
+                <TouchableNativeFeedback onPress={props.onViewDetailBest} useForeground>
                     <View style={styles.product}>
                         <View style={styles.imageContainer}>
-                            <Image style={styles.image} source={{uri: props.image}}/>
+                            <Image style={styles.image} source={{uri: props.imageBest}}/>
                         </View>
                         <View style={styles.details}>
-                            <Text style={styles.title}>{props.title}</Text>
+                            <Text style={styles.title}>{props.titleBest}</Text>
                         </View>
-                        <Text style={styles.detailItem}>{props.detail}</Text>
+                        <Text style={styles.detailItem}>{props.detailBest}</Text>
                         <View style={styles.actions}>
-                            <Text style={styles.price}>${props.price.toFixed(2)}</Text>
-                            {/* <TouchableOpacity> */}
+                            <Text style={styles.price}>${props.priceBest.toFixed(2)}</Text>
+                            <TouchableOpacity>
                                 <CustomButton style={styles.addButoon}>
-                                    <Icon name='plus' size={25} color='white' onPress={props.onAddToCart}/>
+                                    <Icon name='plus' size={25} color='white'/>
                                 </CustomButton>
-                            {/* </TouchableOpacity> */}
+                            </TouchableOpacity>
                         </View>
                     </View>
                 </TouchableNativeFeedback>
             </View>
-        </View>
     );
 };
 
@@ -92,4 +90,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default ProductItem;
+export default ProductItemBest;

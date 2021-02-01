@@ -13,7 +13,7 @@ const SignInScreen = (props) =>{
                     Get Your Groceries With Nectar
                 </Text>
                 <View style={styles.inputText}>
-                    <Flags code='IN' size={32}/>
+                    <Flags code='IN' size={32} style={styles.flags}/>
                     <Text style={styles.countryCode}>+91</Text>
                     <TextInput keyboardType='numeric' maxLength={10} style={styles.contact}/>
                 </View>
@@ -60,11 +60,15 @@ const styles = StyleSheet.create({
     },
     countryCode:{
         fontSize:22,
-        marginLeft:10
+        marginLeft:10,
+        marginTop: 9
     },
     contact:{
         fontSize:22,
         color:'#030303',
+    },
+    flags:{
+        marginTop: 9
     },
     text:{
         marginTop: Dimensions.get('window').width /20
