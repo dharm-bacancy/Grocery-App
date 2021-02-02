@@ -1,10 +1,10 @@
 import React from 'react';
 import {View,StyleSheet,Text,Image,Button,Dimensions,ScrollView,TextInput,TouchableNativeFeedback,TouchableOpacity} from 'react-native';
 import Colors from '../constants/Colors';
-import Icon from 'react-native-vector-icons/Entypo';
 import CustomButton from '../components/CustomButton';
+import Icon from 'react-native-vector-icons/Entypo';
 
-const BeveragesItem = props =>{
+const DairyeggItem = props =>{
     return(
         <View>
             <View style={styles.touchable}>
@@ -62,6 +62,7 @@ const styles = StyleSheet.create({
     },
     title:{
         fontSize:18,
+        marginVertical: 4,
         fontWeight:'bold'
     },
     detailItem:{
@@ -81,11 +82,9 @@ const styles = StyleSheet.create({
         paddingHorizontal:20,
     },
     details:{
-        paddingTop:5,
-        paddingHorizontal:10,
+        padding:10,
         alignItems:'center',
-        height:'15%',
-        marginBottom:2
+        height:'15%'
     },
     addButoon:{
         width: Dimensions.get('window').width / 10,
@@ -93,4 +92,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default BeveragesItem;
+export default DairyeggItem;

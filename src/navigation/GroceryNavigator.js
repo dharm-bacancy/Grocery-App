@@ -12,6 +12,13 @@ import FavoriteScreen from '../screens/FavoriteScreen';
 import AccountScreen from '../screens/AccountScreen';
 import ProductDetailScreen from '../screens/ProductDetailScreen';
 import BeveragesScreen from '../screens/BeveragesScreen';
+import VegetableScreen from '../screens/VegetableScreen';
+import OilScreen from '../screens/OilScreen';
+import NonvegScreen from '../screens/NonvegScreen';
+import BakeryScreen from '../screens/BakeryScreen';
+import DairyeggScreen from '../screens/DairyeggScreen';
+import PulseScreen from '../screens/PulseScreen';
+import RiceScreen from '../screens/RiceScreen';
 
 const GroceryNavigator = createStackNavigator({
     Splash: SplashScreen,
@@ -23,7 +30,14 @@ const GroceryNavigator = createStackNavigator({
     Favorite: FavoriteScreen,
     Account: AccountScreen,
     ProductDetail: ProductDetailScreen,
-    Beverages: BeveragesScreen
+    Beverages: BeveragesScreen,
+    Vegetable: VegetableScreen,
+    Oil: OilScreen,
+    Nonveg: NonvegScreen,
+    Bakery: BakeryScreen,
+    Dairyegg: DairyeggScreen,
+    Pulse: PulseScreen,
+    Rice: RiceScreen
 });
 
 

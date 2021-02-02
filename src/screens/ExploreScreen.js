@@ -16,7 +16,7 @@ const ExploreScreen = props => {
                 </Animatable.View>
                 <View style={styles.touchable} >
                     <View style={{flexDirection:'row'}}>
-                        <TouchableNativeFeedback useForeground>
+                        <TouchableNativeFeedback useForeground onPress={()=>props.navigation.navigate('Vegetable')}>
                             <View style={styles.product}>
                                 <View style={styles.imageContainer}>
                                     <Image style={styles.image} source={{uri:'https://lh3.googleusercontent.com/proxy/2YmDmFi1MSY0Fzc92mhdvBGxuk3lq0w95cWugO1KLOmGzq5kWl7Rzmv31-dCYTL3XahLT1QvjQYMuiL1hNfN7gMxyWytsh7Y8cMw4RLZEqSthJEjd8bwSiY'}}/>
@@ -26,7 +26,7 @@ const ExploreScreen = props => {
                                 </View>
                             </View>
                         </TouchableNativeFeedback>
-                        <TouchableNativeFeedback useForeground>
+                        <TouchableNativeFeedback useForeground onPress={()=>props.navigation.navigate('Oil')}>
                             <View style={styles.product}>
                                 <View style={styles.imageContainer}>
                                     <Image style={styles.image} source={{uri:'https://p7.hiclipart.com/preview/2/84/34/soybean-oil-cooking-oils-vegetable-oil-sunflower-oil-oil.jpg'}}/>
@@ -38,7 +38,7 @@ const ExploreScreen = props => {
                         </TouchableNativeFeedback>
                     </View>
                     <View style={{flexDirection:'row'}}>
-                        <TouchableNativeFeedback useForeground>
+                        <TouchableNativeFeedback useForeground onPress={()=>props.navigation.navigate('Nonveg')}>
                             <View style={styles.product}>
                                 <View style={styles.imageContainer}>
                                     <Image style={styles.image} source={{uri:'https://previews.123rf.com/images/magone/magone1502/magone150200094/36454292-fresh-raw-meat-products-on-wooden-table.jpg'}}/>
@@ -48,7 +48,7 @@ const ExploreScreen = props => {
                                 </View>
                             </View> 
                         </TouchableNativeFeedback>
-                        <TouchableNativeFeedback useForeground>
+                        <TouchableNativeFeedback useForeground onPress={()=>props.navigation.navigate('Bakery')}>
                             <View style={styles.product}>
                                 <View style={styles.imageContainer}>
                                     <Image style={styles.image} source={{uri:'https://content3.jdmagicbox.com/comp/def_content/bakeries/default-bakeries-13.jpg'}}/>
@@ -60,7 +60,7 @@ const ExploreScreen = props => {
                         </TouchableNativeFeedback>
                     </View>
                     <View style={{flexDirection:'row'}}>
-                        <TouchableNativeFeedback useForeground>
+                        <TouchableNativeFeedback useForeground onPress={()=>props.navigation.navigate('Dairyegg')}>
                             <View style={styles.product}>
                                 <View style={styles.imageContainer}>
                                     <Image style={styles.image} source={{uri:'https://www.dabiramagazine.com/wp-content/uploads/2019/05/PICTURE-2.jpg'}}/>
@@ -82,7 +82,7 @@ const ExploreScreen = props => {
                         </TouchableNativeFeedback>
                     </View>
                     <View style={{flexDirection:'row'}}>
-                        <TouchableNativeFeedback useForeground>
+                        <TouchableNativeFeedback useForeground onPress={()=>props.navigation.navigate('Pulse')}>
                         <View style={styles.product}>
                             <View style={styles.imageContainer}>
                                 <Image style={styles.image} source={{uri:'https://lh3.googleusercontent.com/proxy/vnD9br1v9VwwA5sOBeP6ikc-3O6IRuj5l_StrO04KAwvmYJpKyw53OhV98l0kCKvt39hkEaf0CaDXb5V1Nl9pc1dQMaNmOzkzN6vn15PedkigdIbDG4XiQ'}}/>
@@ -92,7 +92,7 @@ const ExploreScreen = props => {
                             </View>
                         </View> 
                         </TouchableNativeFeedback>
-                        <TouchableNativeFeedback useForeground>
+                        <TouchableNativeFeedback useForeground onPress={()=>props.navigation.navigate('Rice')}>
                         <View style={styles.product}>
                             <View style={styles.imageContainer}>
                                 <Image style={styles.image} source={{uri:'https://previews.123rf.com/images/zendograph/zendograph1812/zendograph181200044/114671402-top-view-of-jasmine-rice-in-a-bowl-on-dark-wooden-table-with-rice-plants-jasmine-flower-ear-of-rices.jpg'}}/>

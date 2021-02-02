@@ -63,17 +63,17 @@ const styles = StyleSheet.create({
     title:{
         fontSize:18,
         marginVertical: 4,
+        fontWeight:'bold'
     },
     detailItem:{
         fontSize: 15,
-        //marginVertical: 4,
         paddingLeft:17,
         paddingBottom:2,
         color:'#888'
-        //alignItems:'flex-start'
     },
     price:{
-        fontSize: 20
+        fontSize: 20,
+        fontWeight:'bold'
     },
     actions:{
         flexDirection:'row',
