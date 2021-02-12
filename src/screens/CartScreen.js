@@ -100,4 +100,8 @@ const styles = StyleSheet.create({
     }
 });
 
+CartScreen.navigationOptions ={
+    headerTitle:"My Cart"
+};
+
 export default CartScreen;

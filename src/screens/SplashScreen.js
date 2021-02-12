@@ -5,7 +5,7 @@ import Colors from '../constants/Colors';
 const SplashScreen = (props) =>{
     setTimeout(() => {
         props.navigation.replace('GettingStarted');
-    },2000);
+    },1500);
     return(
         <View style={styles.container}>
             <Image source={require('../../assets/images/groceries.jpg')}/>

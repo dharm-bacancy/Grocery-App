@@ -71,7 +71,6 @@ const ProductsOverviewScreen = props =>{
                                 />
                             )}
                         />
-                        <Text style={styles.title}>Groceries</Text>
                     </View>
                 </ScrollView>
             </ScrollView>
@@ -115,89 +114,8 @@ const styles = StyleSheet.create({
     }
 });
 
-// ProductsOverviewScreen.navigationOptions = navData => {
-//     return{
-//         tabBarLabel:'shop',
-//         tabBarColor:'white',
-//         tabBarIcon: (tabInfo) => {
-//             return(
-//                 <Icon name='shopping-basket' size={25} color='black'/>
-//             );
-//         } 
-//     };
-// };
-
-const TabNavigator = createMaterialBottomTabNavigator({
-    Shop:{
-        screen: ProductsOverviewScreen,
-        navigationOptions:{
-            tabBarLabel:'Shop',
-            tabBarColor:'white',
-            tabBarIcon: (tabInfo) => {
-                return(
-                    <Icon name='shopping-basket' size={25} color='black'/>
-                );
-            }
-        }
-    },
-    Explore:{
-        screen: ExploreScreen,
-        navigationOptions:{
-            tabBarLabel:'Explore',
-            tabBarColor:Colors.primaryColor,
-            tabBarIcon: (tabInfo) => {
-                return(
-                    <Icon name='search' size={25} color='black'/>
-                );
-            }
-        }
-    },
-    Cart:{
-        screen:CartScreen,
-        navigationOptions:{
-            tabBarLabel:'Cart',
-            tabBarColor:Colors.accent,
-            tabBarIcon: (tabInfo) => {
-                return(
-                    <Icon 
-                        name='shopping-cart' 
-                        size={25} color='black' 
-                        // onPress={()=> {
-                        //     navigation.navigate('Cart')
-                        // }}
-                    /> 
-                );
-            }
-        }
-    },
-    Favourite:{
-        screen:FavouriteScreen,
-        navigationOptions:{
-            tabBarLabel:'Favorite',
-            tabBarColor:'red',
-            tabBarIcon: (tabInfo) => {
-                return(
-                    <Icon name='heart' size={25} color='black'/>
-                );
-            }
-        }
-    },
-    Account:{
-        screen:AccountScreen,
-        navigationOptions:{
-            tabBarLabel:'Account',
-            tabBarColor:'gray',
-            tabBarIcon:(tabInfo) => {
-                return(
-                    <Icon name='user' size={25} color='black'/>
-                );
-            }
-        }
-    }
-});
-
 ProductsOverviewScreen.navigationOptions = {
     headerShown: false
 };
 
-export default TabNavigator;
+export default ProductsOverviewScreen;

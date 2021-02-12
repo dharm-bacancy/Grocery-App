@@ -1,9 +1,9 @@
 import React from 'react';
-import {View,StyleSheet,Text,FlatList,ScrollView} from 'react-native';
+import {View,StyleSheet,Text,FlatList,ScrollView,TouchableOpacity} from 'react-native';
 import {useSelector,useDispatch} from 'react-redux';
 import NonvegItem from '../components//NonvegItem';
 import * as cartAction from '../../store/actions/cart';
-
+import Icon from 'react-native-vector-icons/Entypo';
 
 const NonvegScreen = props =>{
     const products = useSelector(state => state.products.nonvegProducts);
@@ -38,5 +38,16 @@ const NonvegScreen = props =>{
 };
 
 const styles = StyleSheet.create({});
+
+NonvegScreen.navigationOptions =navData => {
+    return{
+        headerTitle: 'Meat & Fish',
+        headerRight:(
+            <TouchableOpacity onPress={() =>{}}>
+                <Icon name='list' size={25} color='black'/>
+            </TouchableOpacity>
+        )
+    };
+};
 
 export default NonvegScreen;

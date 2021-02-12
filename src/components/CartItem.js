@@ -31,7 +31,7 @@ const CartItem = props => {
                         </View>
                     </View>
                 </View>
-                <Text style={styles.mainText}>${props.amount.toFixed(2)}</Text>
+                <Text style={styles.mainAmount}>${props.amount.toFixed(2)}</Text>
             </View>
         </ScrollView>
     );
@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
         marginLeft: 20,
         marginTop: 7
     },
-    mainText:{
+    mainAmount:{
         justifyContent:'flex-end',
         fontFamily:'bold',
         fontSize:18

@@ -316,7 +316,7 @@ const PRODUCTS = [
         'u7',
         'x4',
         'Khari',
-        'https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/London_broil.jpg/1200px-London_broil.jpg',
+        'https://indiaphile.info/wp-content/uploads/2013/03/kharibiscuits-4014.jpg',
         '200g, Price',
         'Kharia biscuits, often known as khari biscuits or puffed salted biscuits are a common hit as a tea-time snack.',
         1.3

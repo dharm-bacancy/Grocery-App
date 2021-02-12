@@ -1,9 +1,9 @@
 import React from 'react';
-import {View,StyleSheet,Text,FlatList,ScrollView} from 'react-native';
+import {View,StyleSheet,Text,FlatList,ScrollView,TouchableOpacity} from 'react-native';
 import {useSelector,useDispatch} from 'react-redux';
 import DairyeggItem from '../components//DairyeggItem';
 import * as cartAction from '../../store/actions/cart';
-
+import Icon from 'react-native-vector-icons/Entypo';
 
 const DairyeggScreen = props =>{
     const products = useSelector(state => state.products.dairyEggProducts);
@@ -38,5 +38,16 @@ const DairyeggScreen = props =>{
 };
 
 const styles = StyleSheet.create({});
+
+DairyeggScreen.navigationOptions = navData =>{
+    return{
+        headerTitle: 'Dairy & Eggs',
+        headerRight:(
+            <TouchableOpacity onPress={() =>{}}>
+                <Icon name='list' size={25} color='black'/>
+            </TouchableOpacity>
+        )
+    };
+};
 
 export default DairyeggScreen;

@@ -164,4 +164,8 @@ const styles = StyleSheet.create({
     }
 });
 
+ExploreScreen.navigationOptions = {
+    headerTitle: 'Find Products',
+};
+
 export default ExploreScreen;

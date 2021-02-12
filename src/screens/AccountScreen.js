@@ -9,4 +9,8 @@ const AccountScreen = props => {
     );
 };
 
+AccountScreen.navigationOptions ={
+    headreTitle: 'Account'
+};
+
 export default AccountScreen;

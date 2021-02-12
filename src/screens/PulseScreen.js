@@ -1,8 +1,9 @@
 import React from 'react';
-import {View,StyleSheet,Text,FlatList,ScrollView} from 'react-native';
+import {View,StyleSheet,Text,FlatList,ScrollView,TouchableOpacity} from 'react-native';
 import {useSelector,useDispatch} from 'react-redux';
 import PulseItem from '../components/PulseItem';
 import * as cartAction from '../../store/actions/cart';
+import Icon from 'react-native-vector-icons/Entypo';
 
 
 const PulseScreen = props =>{
@@ -38,5 +39,16 @@ const PulseScreen = props =>{
 };
 
 const styles = StyleSheet.create({});
+
+PulseScreen.navigationOptions = navData =>{
+    return{
+        headerTitle: 'Pulse',
+        headerRight:(
+            <TouchableOpacity onPress={() =>{}}>
+                <Icon name='list' size={25} color='black'/>
+            </TouchableOpacity>
+        )
+    };
+};
 
 export default PulseScreen;
