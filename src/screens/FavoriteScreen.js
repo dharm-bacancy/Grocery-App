@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet,View,Text,FlatList,Button,Dimensions,ScrollView} from 'react-native';
+import {StyleSheet,View,Text,FlatList,Button,Dimensions,ScrollView,TouchableOpacity} from 'react-native';
 import Colors from '../constants/Colors';
 import {useSelector,useDispatch} from 'react-redux';
 import FavoriteItem from '../components/FavoriteItem';
@@ -24,6 +24,8 @@ const FavoriteScreen = props => {
             a.productId > b.productId ? 1: -1
         );
     });
+
+    
     const dispatch = useDispatch();
     
     return(
@@ -41,9 +43,12 @@ const FavoriteScreen = props => {
                     />
                 )}
             />
+            <TouchableOpacity>
             <View style={styles.button}>
                 <CustomButton title='Add All To Cart' style={styles.customButton}/>
+                {/* <Button title='Add All To Cart' style={styles.customButton} onPress={props.onAddToCart}/> */}
             </View>
+            </TouchableOpacity>
         </ScrollView>
     );
 };

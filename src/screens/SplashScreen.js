@@ -5,10 +5,10 @@ import Colors from '../constants/Colors';
 const SplashScreen = (props) =>{
     setTimeout(() => {
         props.navigation.replace('GettingStarted');
-    },1500);
+    },2000);
     return(
         <View style={styles.container}>
-            <Image source={require('../../assets/images/groceries.jpg')}/>
+            <Image source={require('../../assets/images/012.jpg')} style={{width:'100%', height:'100%'}}/>
         </View>
     );
 };
