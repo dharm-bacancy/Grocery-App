@@ -9,7 +9,7 @@ const PRODUCTS = [
         'https://stokkist.in/wp-content/uploads/2020/11/Organic-Banana-2.jpg',
         '7pcs, Priceg',
         'Bananas can help regulate blood pressure and control the activity of the heart. Those who consume high amounts of potassium have up to 27% lower risk of heart disease.',
-        4.99
+        4.9
     ),
     new Product(
         'p2',
@@ -19,7 +19,7 @@ const PRODUCTS = [
         'https://blog.biohmhealth.com/wp-content/uploads/2019/06/ripe-red-apples-on-table-close-prebiotics-supplements-ss.jpg',
         '1kg, Price',
         'Apples are Nutritious. Apples may be good for weight loss. Apple may be good for your heart. As part of a healtful and varied diet.',
-        5.99
+        5.9
     ),
     new Product(
         'p3',
@@ -29,7 +29,7 @@ const PRODUCTS = [
         'https://cdn.downtoearth.org.in/library/large/2020-10-15/0.83996600_1602777023_9.jpg',
         '1Kg, Price',
         'pepper is a healthy food that may have some antimicrobial properties. There is no evidence that eating pepper has protected people from the new coronavirus.',
-        5.62
+        5.6
     ),
     new Product(
         'p4',
@@ -39,7 +39,7 @@ const PRODUCTS = [
         'https://static.toiimg.com/thumb/msid-68035301,width-800,height-600,resizemode-75,imgsize-1943897,pt-32,y_pad-40/68035301.jpg',
         '1Kg, Price',
         'Ginger is popularly used as a spice in cooking and can be used either fresh, dried or powdered. The fresh rhizome can be used to extract ginger essential oil. Ginger may also be used to flavor beverages. Ginger continues to be a popular folk remedy in China and India.',
-        2.19
+        2.1
     ),
     new Product(
         'p5',
@@ -49,7 +49,7 @@ const PRODUCTS = [
         'https://miro.medium.com/max/960/0*AZhhiA7beCRygMSd.jpg',
         '1kg, Price',
         'Tomato fruit can be eaten raw or cooked and is used in many dishes. The fruit may also be processed into juice, soup, ketchup, puree, paste or powder.',
-        1.17
+        1.1
     ),
     new Product(
         'p6',
@@ -69,7 +69,7 @@ const PRODUCTS = [
         'https://www.bazaarfresh.in/wp-content/uploads/2018/08/red-capsicum.png',
         '1kg, Price',
         'Technically a fruit, red peppers are more common as a staple in the vegetable produce section. They are also an excellent source of vitamins A and C. Each half cup of raw red pepper provides you with 47 percent of your daily recommended intake of vitamin A and 159 percent of your vitamin C.',
-        4.99
+        4.9
     ),
     new Product(
         'p8',
@@ -99,7 +99,7 @@ const PRODUCTS = [
         'https://s3.india.com/wp-content/uploads/2020/08/red-onion.jpg',
         '1kg, Price',
         'Onions contain antioxidants and compounds that fight inflammation, decrease triglycerides and reduce cholesterol levels — all of which may lower heart disease risk. Their potent anti-inflammatory properties may also help reduce high blood pressure and protect against blood clots.',
-        3.44
+        3.4
     ),
     new Product(
         'p11',
@@ -109,7 +109,7 @@ const PRODUCTS = [
         'https://fasab.files.wordpress.com/2014/03/diet-coke.jpg',
         '355ml, Price',
         'Diet Coke, Coca-Cola Light or Coca-Cola Light Taste is a sugar-free and no-calorie soft drink produced and distributed by the Coca-Cola Company. It contains artificial sweeteners instead of sugar',
-        1.99
+        1.9
     ),
     new Product(
         'p12',
@@ -119,7 +119,7 @@ const PRODUCTS = [
         'https://5.imimg.com/data5/UE/NE/WQ/SELLER-82456434/sprinte-cold-derink-500x500.jpg',
         '325ml, Price',
         'Sprite is a lemon-lime flavored soft drink with a crisp, clean taste that gives you the ultimate cut-through refreshment. Sprite is a lemon-lime flavored soft drink with a crisp, clean taste that gives you the ultimate cut-through refreshment.',
-        1.50
+        1.5
     ),
     new Product(
         'p13',
@@ -129,7 +129,7 @@ const PRODUCTS = [
         'https://www.treetop.com/wp-content/uploads/2018/07/tree-top-juice-apple-grape-64oz.png',
         '2L, Price',
         'Reducing the risk of blood clots. Reducing low-density lipoprotein (LDL, or "bad") cholesterol. Preventing damage to blood vessels in your heart. Helping maintain a healthy blood pressure.',
-        15.99
+        15
     ),
     new Product(
         'p14',
@@ -139,7 +139,7 @@ const PRODUCTS = [
         'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/tropicana-organic-orange-juice-with-juicy-bits-ocado-1547734462.jpg?crop=1xw:1xh;center,top&resize=480:*',
         '2L, Price',
         'Orange juice is a liquid extract of the orange tree fruit, produced by squeezing or reaming oranges. The health value of orange juice is debatable: it has a high concentration of vitamin C, but also a very high concentration of simple sugars, comparable to soft drinks.',
-        15.99
+        15
     ),
     new Product(
         'p15',
@@ -149,7 +149,7 @@ const PRODUCTS = [
         'https://previews.123rf.com/images/choneschones/choneschones1505/choneschones150500045/41052522-sofia-bulgaria-june-06-2014-cola-cola-can-with-water-drops-isolated-on-white-.jpg',
         '325ml, Price',
         'a sweetened carbonated beverage that is a cultural institution in the United States and a global symbol of American tastes.',
-        4.99
+        4.9
     ),
     new Product(
         'p16',
@@ -159,7 +159,7 @@ const PRODUCTS = [
         'https://t3.ftcdn.net/jpg/03/23/86/24/360_F_323862457_5RaEzJNg6yeYx6RjbU4WwkAl3R0yxNQt.jpg',
         '330ml, Price',
         'Pepsi is a carbonated soft drink, Our full range of food and beverages are designed to bring a smile to ...',
-        4.99
+        4.9
     ),
     new Product(
         'p17',
@@ -169,7 +169,7 @@ const PRODUCTS = [
         'https://3.imimg.com/data3/SL/LU/GLADMIN-13988303/aa-500x500.png',
         '15L, Price',
         'Gulab Groundnut Oil has MUFA content of 54%, which is more than any other oils. This oil can be used in different forms of cooking such as frying, seasoning and grilling.',
-        24.86
+        24
     ),
     new Product(
         'p18',
@@ -179,7 +179,7 @@ const PRODUCTS = [
         'https://www.adaniwilmar.com/-/media/Project/Wilmar/Home/2.jpg?la=en&hash=9BF781A1AD33F38F48B4CAA917EDB853',
         '15L, Price',
         'Fortune Sunflower oil or Fortune Sunlite Oil is light, healthy and perfectly easy to digest this ... fortune kachi ghani mustard oil, it is time to try something naya.',
-        28.75
+        28
     ),
     new Product(
         'p19',
@@ -199,7 +199,7 @@ const PRODUCTS = [
         'https://neareshop.s3.ap-south-1.amazonaws.com/2020/05/Saffola-Gold-Oil-Jar-5-L_New_1405.jpg',
         '5L, Price',
         'Safrole is also present in certain essentials oils and in brown camphor oil, which is present, in small amounts, in many plants. Safrole can be found in anise',
-        11.23
+        11
     ),
     new Product(
         'p21',
@@ -209,7 +209,7 @@ const PRODUCTS = [
         'https://images-na.ssl-images-amazon.com/images/I/81Jeu4bBj1L._SY550_.jpg',
         '1KG, Price',
         'The Dynamix Cow Ghee adds aroma to the dishes and has a very important role to play if you want to make tasty recipes, helps in improving digestion thereby activating the secretion of stomach acids, rich in antioxidants, relieves Constipation, boosts energy and is non-allergic.',
-        6.88
+        6.8
     ),
     new Product(
         'p22',
@@ -219,7 +219,7 @@ const PRODUCTS = [
         'https://indiangrocery.jp/wp-content/uploads/2020/07/Gowardhan-Pure-Cow-Ghee-500ml-in-Japan.jpg',
         '1KG, Price',
         'Gowardhan Ghee is produced in a Morden dairy plant, using a time-testing traditional recipe to capture the full flavour and aroma of cow ghee. It is reach source of natural vitamins and B – Carotene.',
-        8.49
+        8.4
     ),
     new Product(
         'p23',
@@ -229,7 +229,7 @@ const PRODUCTS = [
         'http://demo.sidhagharpe.com/wp-content/uploads/2019/02/patanjali-cow-27s-ghee-2c-200ml-500x500.jpg',
         '1L, Price',
         'Patanjali Cow Ghee is full of nutritive properties and an ideal diet. Cow ghee increases memory, intellect, the power of digestion, Ojas, Kapha and fat. Regular consumption of ghee or inclusion of ghee as part of the diet, is recommended for those seeking weight gain.',
-        8.08
+        8.0
     ),
     new Product(
         'p24',
@@ -239,7 +239,7 @@ const PRODUCTS = [
         'https://www.annshri.com/static/products/A0000000135-1/amul-desi-ghee-5-ltr-detail.jpeg',
         '1KG, Price',
         'Amul Ghee is made from fresh cream and it has typical rich aroma and granular texture. Amul Ghee is an ethnic product made by dairies with decades of experience, and rich source of Vitamin A,D,E and K.',
-        6.65
+        6.6
     ),
     new Product(
         'p25',
@@ -249,7 +249,7 @@ const PRODUCTS = [
         'https://images-gmi-pmc.edge-generalmills.com/b57341e4-5fbf-4413-9445-1aca51a34e57.jpg',
         '1KG, Price',
         'Ham is pork from a leg cut that has been preserved by wet or dry curing, with or without smoking. As a processed meat, the term "ham" includes both whole cuts of meat and ones that have been mechanically formed.',
-        13.01
+        13
     ),
     new Product(
         'p26',
@@ -259,7 +259,7 @@ const PRODUCTS = [
         'https://www.foodrepublic.com/wp-content/uploads/2016/06/chilicrab.jpg',
         '1KG, Price',
         'Crabs are omnivores, feeding primarily on algae, and taking any other food, including molluscs, worms, other crustaceans, fungi, bacteria, and detritus, depending on their availability and the crab specie',
-        4.11
+        4.1
     ),
     new Product(
         'p27',
@@ -269,7 +269,7 @@ const PRODUCTS = [
         'https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/food-beverage-nutrition/globalmeatnews.com/headlines/livestock/global-lamb-prices-on-the-rise/8554070-1-eng-GB/Global-lamb-prices-on-the-rise_wrbm_large.jpg',
         '1KG, Price',
         'This is a list of lamb and mutton dishes and foods. Lamb and mutton are terms for the meat of domestic sheep (species Ovis aries) at different ages.',
-        6.44
+        6.4
     ),
     new Product(
         'p28',
@@ -279,7 +279,7 @@ const PRODUCTS = [
         'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/roast-beef-recipes-536cd86.jpg?quality=90&resize=768,574',
         '1KG, Price',
         'Beef is the culinary name for meat from cattle, particularly skeletal muscle. Humans have been eating beef since prehistoric times. Beef is a source of protein and nutrients.',
-        2.96
+        2.9
     ),
     new Product(
         'p29',
@@ -289,7 +289,7 @@ const PRODUCTS = [
         'https://post.healthline.com/wp-content/uploads/2020/08/is-bacon-bad-or-good-732x549-thumbnail-732x549.jpg',
         '1KG, Price',
         'Bacon is a type of salt-cured pork made from various cuts, typically from the pork belly or from the less fatty back cuts. The word is derived from the Old High German Bahho, meaning "buttock", "ham" or "side of bacon", and is cognate with the Old French bacon.',
-        6.16
+        6.1
     ),
     new Product(
         'p30',
@@ -299,7 +299,7 @@ const PRODUCTS = [
         'https://upload.wikimedia.org/wikipedia/commons/8/8c/Fish_Food_Decoration.jpg',
         '1KG, Price',
         'Live fish food include earthworms, sludge worms, water fleas, bloodworms, and feeder fish. Food for larvae and young fish include infusoria (Protozoa and other microorganisms), newly hatched brine shrimp and microworms. These are the most preferred type of food for fishes, but are difficult to get.',
-        2.96
+        2.9
     ),
     new Product(
         'p31',
@@ -309,7 +309,7 @@ const PRODUCTS = [
         'https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/London_broil.jpg/1200px-London_broil.jpg',
         '1KG, Price',
         'A steak is a meat generally sliced across the muscle fibers, potentially including a bone. Steak can also be cooked in sauce, such as in steak and kidney pie, or minced and formed into patties, such as hamburgers.',
-        4.92
+        4.9
     ),
     new Product(
         'p32',
@@ -329,7 +329,7 @@ const PRODUCTS = [
         'https://tatyanaseverydayfood.com/wp-content/uploads/2016/02/Classic-Red-Velvet-Cake.jpg',
         '500g, Price',
         'Cake is a form of sweet food made from flour, sugar, and other ingredients, that is usually baked. Common additional ingredients and flavourings include dried, candied, or fresh fruit, nuts, cocoa, and extracts such as vanilla, with numerous substitutions for the primary ingredients.',
-        10.26
+        10
     ),
     new Product(
         'p34',
@@ -379,7 +379,7 @@ const PRODUCTS = [
         'https://www.charismaticplanet.com/wp-content/uploads/2017/07/2-2-747x560.jpg',
         '4pcs, Price',
         'The Rhode Island Red is an American breed of domestic chicken. It is the state bird of Rhode, It was a dual-purpose breed, raised both for meat and for eggs',
-        1.99
+        1.9
     ),
     new Product(
         'p39',
@@ -399,7 +399,7 @@ const PRODUCTS = [
         'https://www.missmysupermarket.com/user/products/large/Tesco%20Finest%20Egg%20Fettuccine%20Pasta%20250G.jpg',
         '30g, Price',
         'Pasta, in which beaten egg is mixed with the flour and water to make the dough. noun.',
-        15.99
+        15
     ),
     new Product(
         'p41',
@@ -409,7 +409,7 @@ const PRODUCTS = [
         'https://static.toiimg.com/photo/52467119.cms',
         '2L, Price',
         'A type of flat pasta that differs from regular flour and water pasta in that eggs are added to enrich the dough. Several different widths are produced commercially and the noodles are available fresh or dried. They are most often used in soups and casseroles.',
-        15.99
+        15
     ),
     new Product(
         'p42',

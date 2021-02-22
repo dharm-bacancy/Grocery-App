@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet,View,Text,ScrollView,Image,Dimensions,TextInput} from 'react-native'; 
+import {StyleSheet,View,Text,ScrollView,Image,Dimensions,TextInput,TouchableNativeFeedback} from 'react-native'; 
 import Flags from 'react-native-flags';
 import CustomButton from '../components/CustomButton';
 import Icon from 'react-native-vector-icons/FontAwesome';
@@ -18,9 +18,11 @@ const SignInScreen = (props) =>{
                     <TextInput keyboardType='numeric' maxLength={10} style={styles.contact}/>
                 </View>
                 <View>
+                    <TouchableNativeFeedback onPress={() =>props.navigation.navigate('Email')}>
                     <Text style={styles.text}>
-                        Or connect with social media
+                        Or connect with E-mail
                     </Text>
+                    </TouchableNativeFeedback>
                 </View>
                 <CustomButton style={styles.facebook} title='Continue With Facebook' onSelect={()=>props.navigation.navigate('ProductsOverview')}>
                     <Icon name='facebook-square' size={30} color='white'/>

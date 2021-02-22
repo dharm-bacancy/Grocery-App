@@ -22,11 +22,13 @@ import DairyeggScreen from '../screens/DairyeggScreen';
 import PulseScreen from '../screens/PulseScreen';
 import RiceScreen from '../screens/RiceScreen';
 import Colors from '../constants/Colors';
+import EmailScreen from '../screens/EmailScreen';
 
 const GroceryNavigator = createStackNavigator({
     Splash: SplashScreen,
     GettingStarted:GettingStartedScreen,
-    SignIn: SignInScreen
+    SignIn: SignInScreen,
+    Email: EmailScreen
 });
 
 const ShopNavigator = createStackNavigator({
